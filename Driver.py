@@ -14,8 +14,8 @@ MAZE_HEIGHT = 39
 generate = Generation.DepthFirst
 solve = Pathfinding.A_Star
 
-"""Choose whether you want to see the animations"""
-animateGeneration = False
+"""Choose whether you want to see the animations. False -> no animations"""
+animateGeneration = True
 animateSolution = True
 
 
