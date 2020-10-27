@@ -10,7 +10,7 @@ Main program exectution is found in Driver.py. Press any button to step through 
 
 ## Generation.py
 ### DepthFirst
-Currently the only supported geneartion algorithm. 
+Currently the only supported generation algorithm. 
 Generates a path until there are no ways to go, then backtracks until it can create a different path.
 Mostly results in mazes with long, windy trails.
 #### Color Key
