@@ -40,8 +40,7 @@ while running:
             running = False
             break
 
-#maze.render()
-#Wait for spacebar before starting finding shortest path
+#Wait for a key to be pressed before starting finding shortest path
 running = True
 while running:
     for event in pygame.event.get():
@@ -50,6 +49,7 @@ while running:
             running = False
             break
 
+#Wait for a key to be pressed or exit button to be clicked to finish program
 running = True
 while running:
     for event in pygame.event.get():
