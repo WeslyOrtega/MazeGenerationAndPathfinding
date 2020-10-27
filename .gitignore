@@ -1,2 +1,2 @@
 #ignore python chache
-/__pycache__
+__pycache__/*
