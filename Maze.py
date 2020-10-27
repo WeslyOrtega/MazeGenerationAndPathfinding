@@ -6,13 +6,13 @@ from pygame import display
 
 class Maze:
 
-    WALL_COLOR = Color(100, 100, 100) #150 0 200
+    WALL_COLOR = Color(100, 100, 100)
     PATH_COLOR = Color(255, 255, 255)
     ENTRANCE_COLOR = Color(255, 0, 0)
 
     def __init__(self, width, height, surface):
-        self.rows = height
-        self.cols = width
+        self.rows = height + (1 - (height % 2))
+        self.cols = width + (1 - (width % 2))
         self.grid = []
         self.surface = surface
 
