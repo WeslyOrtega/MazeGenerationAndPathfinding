@@ -3,7 +3,7 @@
 Python project that visualizes maze generation and multiple path-finding algorithms.
 
 ## How to use
-Main program exectution is found in Driver.py.
+Main program exectution is found in Driver.py. Press any button to step through program execution. After the maze has been solved, use the exit button to exit the program.
 `MAZE_WIDTH` and `MAZE_HEIGHT` are used to specify maze dimensions. Window size readjusts to fit any maze size. Mazes that are too big will go off-screen.
 `generate` and `solve` refer to the generation and pathfinding algorithms, respectively. To change algorithms, substitute the extension for the names described below.
 `animateGeneration` and `animateSolution` alter whether generation steps and pathfining steps will be shown. True -> show steps. False -> skip steps
