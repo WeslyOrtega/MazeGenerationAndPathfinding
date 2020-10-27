@@ -15,7 +15,9 @@ class Maze:
         self.cols = width
         self.grid = []
         self.surface = surface
-        seed(0)
+
+        seed()
+
         self.initialize()
         self.createEntranceAndExit()
 

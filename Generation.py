@@ -1,5 +1,4 @@
 from random import randrange
-from random import seed
 from pygame import time
 
 class DepthFirst:
@@ -10,7 +9,6 @@ class DepthFirst:
         self.maze = maze
         self.animate = animate
         maze.render()
-        seed(2)
         self.generate(1, maze.entrance.y)
         if not animate:
             maze.render()

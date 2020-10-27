@@ -11,9 +11,11 @@ import Pathfinding
 MAZE_WIDTH = 71
 MAZE_HEIGHT = 39
 
+#Choose generation and pathfinding algorithms
 generate = Generation.DepthFirst
 solve = Pathfinding.A_Star
 
+#Choose whether you want to see the animations
 animateGeneration = False
 animateSolution = True
 
@@ -29,15 +31,16 @@ pygame.display.set_icon(icon)
 
 maze = Maze(MAZE_WIDTH, MAZE_HEIGHT, screen)    #Create Maze
 
-#Wait for spacebar to be pressed before starting generation
+#Wait for key to be pressed before starting generation
 running = True
 while running:
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN:
             generate(maze, animateGeneration)                  #Generate
             running = False
+            break
 
-maze.render()
+#maze.render()
 #Wait for spacebar before starting finding shortest path
 running = True
 while running:
@@ -45,6 +48,7 @@ while running:
         if event.type == pygame.KEYDOWN:
             solve(maze, animateSolution)
             running = False
+            break
 
 running = True
 while running:
