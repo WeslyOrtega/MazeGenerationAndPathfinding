@@ -1,4 +1,4 @@
-# MazeGenerationAndPathfinding
+# Maze Generation And Pathfinding
 
 Python project that visualizes maze generation and multiple path-finding algorithms.
 
