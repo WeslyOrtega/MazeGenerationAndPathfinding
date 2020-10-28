@@ -266,6 +266,7 @@ class A_Star:
                 maze.grid[row][col] = self.A_Node(maze.grid[row][col])
         self.A_Node.exit = maze.grid[maze.exit.y][maze.exit.x]
         maze.entrance = maze.grid[maze.entrance.y][maze.entrance.x]
+        maze.exit = maze.grid[maze.exit.y][maze.exit.x]
 
         self.generate()
 

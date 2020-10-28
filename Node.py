@@ -30,6 +30,7 @@ class Node:
 
         rectangle = pygame.Rect((self.x * Node.NODE_WIDTH, self.y * Node.NODE_WIDTH), (Node.NODE_WIDTH, Node.NODE_WIDTH))
         pygame.draw.rect(surface, self.color, rectangle)
+        pygame.event.pump()
 
     def render(self, surface):
         """Draws the node and immediately renders it.
@@ -37,7 +38,6 @@ class Node:
 
         self.draw(surface)
         pygame.display.update()
-        pygame.event.pump()
 
     def __str__(self):
         """String representation of Node. If it's a wall, node is represented by
