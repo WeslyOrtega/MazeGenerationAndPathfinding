@@ -68,7 +68,7 @@ class Maze:
                 node.isWall = True
                 node.visited = False
         self.createEntranceAndExit()
-        self.reset()
+        self.clear()
 
     def clear(self):
         """Clears the maze after traversal. Changes colors back to normal."""
