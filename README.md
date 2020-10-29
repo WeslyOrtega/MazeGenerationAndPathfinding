@@ -13,6 +13,9 @@ Main program exectution is found in Driver.py. Press any button to step through 
 Currently the only supported generation algorithm. 
 Generates a path until there are no ways to go, then backtracks until it can create a different path.
 Mostly results in mazes with long, windy trails.
+
+![Generation](/images/generationExample.png)
+
 #### Color Key
   `gray`:   maze walls. Cursor cannot go through them
   `white`:  maze halls. Cursor can move through them
