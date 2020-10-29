@@ -1,5 +1,6 @@
 from random import randrange
 from pygame import time
+from random import seed
 
 class DepthFirst:
     """Algorithm that generates mazes by creating paths until there isn't a direction
@@ -19,6 +20,9 @@ class DepthFirst:
         self.maze = maze
         self.animate = animate
         maze.render()
+
+        seed()
+
         self.generate(1, maze.entrance.y)   #Start generation next to the entrance
         if not animate:
             maze.render()
