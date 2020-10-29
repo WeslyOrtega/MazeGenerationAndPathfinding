@@ -36,7 +36,7 @@ Not super efficient and only works if all parts of the maze are connected by wal
   
 ### A_Star
 A* pathfinding algorithm.<br />
-Works by calculating the cost of each node and traveling through the least expensive path.<br />
+Works by stepping through the maze and moving through the path with the least cost. The cost of a path is determined by how far away it moves from the entrance, and how close to the exit it gets.<br />
 
 ![A_Star](/Assets/A_StarPathfindingExample.png)
 
