@@ -59,6 +59,32 @@ class Maze:
         self.entrance.color = Maze.ENTRANCE_COLOR
         self.exit.color = Maze.ENTRANCE_COLOR
 
+
+    def reset(self):
+        """Turns all paths back to walls and generates a new entrance and exit."""
+
+        for row in self.grid:
+            for node in row:
+                node.isWall = True
+                node.visited = False
+        self.createEntranceAndExit()
+        self.reset()
+
+    def clear(self):
+        """Clears the maze after traversal. Changes colors back to normal."""
+
+        for row in self.grid:
+            for node in row:
+                if node.isWall:
+                    node.color = self.WALL_COLOR
+                else:
+                    if node == self.entrance or node == self.exit:
+                        node.color = self.ENTRANCE_COLOR
+                    else:
+                        node.color = self.PATH_COLOR
+
+        self.render()
+
     def render(self):
         """Draws all nodes and renders at the end."""
 
