@@ -14,7 +14,7 @@ Currently the only supported generation algorithm.
 Generates a path until there are no ways to go, then backtracks until it can create a different path.
 Mostly results in mazes with long, windy trails.
 
-![Generation](/Assets/generationExample.png)
+![generation](/Assets/generationExample.png)
 
 #### Color Key
   `gray`:   maze walls. Cursor cannot go through them
