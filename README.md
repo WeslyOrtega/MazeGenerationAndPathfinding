@@ -14,7 +14,7 @@ Currently the only supported generation algorithm.
 Generates a path until there are no ways to go, then backtracks until it can create a different path.
 Mostly results in mazes with long, windy trails.
 
-![generation](/Assets/generationExample.png)
+![generation](/Assets/GenerationExample.png)
 
 #### Color Key
   `gray`:   maze walls. Cursor cannot go through them
@@ -26,6 +26,9 @@ Mostly results in mazes with long, windy trails.
 As the name suggests, this algorithm works by prioritizing making right turns over anything else.
 It will often give the impression of wandering aimlessly... and it's pretty much doing that. It does not know where the exit is found, so it will go around until it finds it.
 Not super efficient and only works if all parts of the maze are connected by walls (no "islands").
+
+![HugRightWall](/Assets/HugRightWallPathfindingExample.png)
+
 #### Color Key
   `orange`: algorithm's current position
   `cyan`:   areas previously visited by the algorithm
@@ -34,6 +37,9 @@ Not super efficient and only works if all parts of the maze are connected by wal
 ### A_Star
 A* pathfinding algorithm.
 Works by calculating the cost of each node and traveling through the least expensive path.
+
+![A_Star](/Assets/A_StarPathfindingExample.png)
+
 #### Color Key
   `orange`: nodes in line to be evaluated. The one with the lowest cost is picked to be evaluated next
   `cyan`:   nodes that have been evaluated
